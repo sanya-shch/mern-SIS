@@ -1,0 +1,35 @@
+{
+  "name": "mern-SIS",
+  "version": "1.0.0",
+  "description": "StudentInformationSystem application",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "start": "node ./server/server.js",
+    "server": "nodemon ./server/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": {
+    "name": "Oleksandr Shchipkov",
+    "email": "shchipkov.sanya@ukr.net",
+    "url": "https://github.com/sanya-shch"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "connect-mongo": "^2.0.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "mongoose": "^5.2.1",
+    "meanie-mongoose-to-json": "^1.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5",
+    "concurrently": "^3.6.0"
+  }
+}
