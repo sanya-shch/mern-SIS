@@ -9,15 +9,15 @@ class HomePage extends Component {
     render() {
         return (
             <div >
-                <ParallaxLogoImage/>
-                <br/>
+                {/*<ParallaxLogoImage/>*/}
+                {/*<br/>*/}
                 <p className="boby_block">HomePage</p>
                 <header >
                     <h1>Welcome to React</h1>
                 </header>
 
-                <br/>
-                <Map/>
+                {/*<br/>*/}
+                {/*<Map/>*/}
             </div>
         )
     }

@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import ObjectTable from 'react-object-table'
-// import './AddUser.css';
 import axios from "axios";
 
 class StudentUpdatePanel extends Component {
     constructor(props) {
-        super(props);
+        super();
 
         this.state = {
             ...this.state,
@@ -26,7 +25,7 @@ class StudentUpdatePanel extends Component {
         };
     }
 
-    async componentWillMount(){
+    componentWillMount(){
         this.getStudents();
     }
 
@@ -415,12 +414,6 @@ class StudentUpdatePanel extends Component {
         this.handleShowMarks(this.state.lastMarksId);
     }
 
-    //
-
-    // Rerender = () => {
-    //     this.forceUpdate()
-    // }
-
     // handleDuplicate(id) {
     //     this.setState(prevState => {
     //         const stateChanges = {
@@ -483,7 +476,6 @@ class StudentUpdatePanel extends Component {
                     <p>{this.state.responseSubject}</p>
                 </div>
 
-
                 <div>
                     <p>Subjects Mark</p>
                     <ObjectTable
@@ -527,14 +519,14 @@ StudentUpdatePanel.defaultProps = {
             name: 'Прізвище',
             key: 'surname',
         },
-        {
-            name: 'Логін',
-            key: 'login',
-        },
-        {
-            name: 'Пароль',
-            key: 'password',
-        },
+        // {
+        //     name: 'Логін',
+        //     key: 'login',
+        // },
+        // {
+        //     name: 'Пароль',
+        //     key: 'password',
+        // },
         {
             name: 'Група',
             key: 'groupN',

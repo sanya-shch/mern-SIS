@@ -20,8 +20,8 @@ router.post('/', async (req, res) => {
         await students.create({
             name: req.body.name,
             surname: req.body.surname,
-            login: req.body.login,
-            password: req.body.password,
+            // login: req.body.login,
+            // password: req.body.password,
             groupN: req.body.groupN,
             subjects: req.body.subjects
         });

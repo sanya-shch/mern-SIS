@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ObjectTable from 'react-object-table'
-// import './AddUser.css';
 import axios from "axios";
 
 class TeacherUpdatePanel extends Component {
@@ -55,8 +54,8 @@ class TeacherUpdatePanel extends Component {
         await axios.post('/api/teachers',{
             name: "new",
             surname: "new",
-            login: "new",
-            password: "new",
+            // login: "new",
+            // password: "new",
             subjects: []
         }).catch((err)=>console.log(err))
     }
@@ -212,15 +211,16 @@ TeacherUpdatePanel.defaultProps = {
         {
             name: 'Прізвище',
             key: 'surname',
-        },
-        {
-            name: 'Логін',
-            key: 'login',
-        },
-        {
-            name: 'Пароль',
-            key: 'password',
         }
+        // ,
+        // {
+        //     name: 'Логін',
+        //     key: 'login',
+        // },
+        // {
+        //     name: 'Пароль',
+        //     key: 'password',
+        // }
     ],
     columnsSubject: [
         {

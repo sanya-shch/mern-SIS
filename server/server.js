@@ -30,8 +30,6 @@ app.use(
     })
 );
 
-
-
 // Routes
 app.use('/user', require('./routes/users'));
 app.use('/api/teachers', require('./routes/teachers'));

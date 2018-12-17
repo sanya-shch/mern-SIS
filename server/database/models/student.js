@@ -5,8 +5,8 @@ const Schema = mongoose.Schema;
 const StudentSchema = new Schema({
     name: String,
     surname: String,
-    login: String,
-    password: String,
+    // login: String,
+    // password: String,
     groupN: String,
     subjects: [new Schema({
         subjectName:  String,

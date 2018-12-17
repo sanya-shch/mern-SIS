@@ -20,8 +20,8 @@ router.post('/', async (req, res) => {
         await teachers.create({
             name: req.body.name,
             surname: req.body.surname,
-            login: req.body.login,
-            password: req.body.password,
+            // login: req.body.login,
+            // password: req.body.password,
             subjects: req.body.subjects
         });
         res.send({ message: 'The teacher was created' });
@@ -88,11 +88,6 @@ router.put('/subj/:id_Teacher/:id_Subject', async (req, res) => {
                 {_id:req.params.id_Teacher, "subjects._id":req.params.id_Subject},
                 { $set: {"subjects.$.subjectName": req.body.subjectName} }
             );
-        // else if(req.body.subjectName && req.body.groups)
-        //     await teachers.updateOne(
-        //         {_id:req.params.id_Teacher, "subjects._id":req.params.id_Subject},
-        //         { $set: {"subjects.$.subjectName": req.body.subjectName ,"subjects.$.groups": req.body.groups} }
-        //     );
         res.send({ message: 'The subject in teacher was updated' });
     } catch(err) {
         res.status(400).send({ error: err });

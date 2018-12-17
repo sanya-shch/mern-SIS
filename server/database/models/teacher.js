@@ -18,20 +18,20 @@ const TeacherSchema = new Schema({
         maxlength: 33,
         trim: true
     },
-    login: {
-        type: String,
-        required: true,
-        minlength: 3,
-        maxlength: 33,
-        trim: true
-    },
-    password: {
-        type: String,
-        required: true,
-        minlength: 3,
-        maxlength: 33,
-        trim: true
-    },
+    // login: {
+    //     type: String,
+    //     required: true,
+    //     minlength: 3,
+    //     maxlength: 33,
+    //     trim: true
+    // },
+    // password: {
+    //     type: String,
+    //     required: true,
+    //     minlength: 3,
+    //     maxlength: 33,
+    //     trim: true
+    // },
     subjects: [new Schema({
         subjectName: {
             type: String,
